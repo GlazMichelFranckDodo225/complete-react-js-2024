@@ -1,5 +1,5 @@
-const List = () => {
-    const people = [{
+const List = (props) => {
+    /* const people = [{
         id: 0,
         name: 'Creola Katherine Johnson',
         profession: 'mathématicienne',
@@ -29,14 +29,14 @@ const List = () => {
         profession: 'astrophysicien',
         accomplishment: 'son calcul de la masse des naines blanches',
         imageId: 'lrWQx8l'
-    }];
+    }]; */
 
     // const technologies = ["Java", "Spring", "React", "Bootstrap", "JavaScript", "Python"];
 
     return (
         <div>
             <h5>People :</h5>
-            {people.map(item => (
+            {props.people.map(item => (
                 <div
                     key={item.id}
                     style={{
